@@ -1,4 +1,12 @@
-let a=0
-function display(){
-    document.getElementById("dis").innerHTML
+function display(a){
+    var b=document.getElementById("dis").value
+    if (a!="=")
+    {
+    var z=b+a
+    document.getElementById("dis").value=z
+    }
+    else{
+        z=eval(b)
+        document.getElementById("dis").value=z
+    }
 }
